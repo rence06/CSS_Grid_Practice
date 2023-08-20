@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>CSS Grid- Justify</title>
+
+   <style>
+
+      .html, body{
+         margin: 0;
+         padding: 0;
+      }
+      .main{
+         height: 100vh;
+         background-color: gray;
+
+         /* GRID */
+
+         display: grid;
+         grid-template-columns: 1fr 1fr 1fr 1fr;
+         justify-items: center;
+         
+         /* justify-items: start; 
+         /* justify-items: end;*/ 
+         /* justify-content: ; */
+         /* justify-self: ; */
+      }
+      .main div{
+         height: 200px;
+         width: 200px;
+        
+      }
+
+      .row1{
+        
+         background-color: red;
+      }
+      .row2{
+      
+         background-color: blue;
+      }
+      .row3{
+        
+         background-color: yellow;
+      }
+      .row4
+      {  
+        
+         background-color: green;
+      }
+   </style>
+</head>
+<body>
+      <div class="main">
+      <div class="row1">Row1</div>
+      <div class="row2">Row2</div>
+      <div class="row3">Row3</div>
+      <div class="row4">Row24</div>
+      </div>
+
+
+<summary>
+<!--
+justify (align items in x-axis)
+justify-items: di pinapakailaman ang size ng content (align di niccompress size) size 100 == 100
+justify-content: niccompress niya yung element (align niccompress size) size 100 can be 50.... if compress
+justify-self: mismong element yung inaalign -->
+</summary>
+</body>
+</html>

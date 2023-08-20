@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>CSS Grid- Place</title>
+
+   <style>
+
+      .html, body{
+         margin: 0;
+         padding: 0;
+      }
+      .main{
+         height: 100vh;
+         background-color: gray;
+
+         /* GRID */
+
+         display: grid;
+         grid-template-columns: 1fr 1fr 1fr 1fr;
+         /* place-items: center; */
+         place-items: end;
+     
+         
+      }
+      .main div{
+         height: 200px;
+         width: 200px;
+        
+      }
+
+      .row1{
+        
+         background-color: red;
+      }
+      .row2{
+      
+         background-color: blue;
+      }
+      .row3{
+        
+         background-color: yellow;
+      }
+      .row4
+      {  
+        
+         background-color: green;
+      }
+   </style>
+</head>
+<body>
+      <div class="main">
+      <div class="row1">Row1</div>
+      <div class="row2">Row2</div>
+      <div class="row3">Row3</div>
+      <div class="row4">Row24</div>
+      </div>
+
+
+<summary>
+<!-- place items will align the element in x and y axis -->
+<!-- siya yung align at justify -->
+</summary>
+</body>
+</html>

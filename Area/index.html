@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>CSS Grid - Areas</title>
+</head>
+
+<style>
+
+   body, html
+   {
+      margin: 0;
+      padding: 0;
+   }
+   .main
+   {
+      height: 100vh;
+      background-color: gray;
+
+      
+   /* Grid */
+      display: grid;
+      grid-template-areas: 
+      "row1 row2 row2"
+      "row1 row2 row2"
+      "row1 row3 row4";
+
+      grid-template-columns: 250px 2fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+   }
+   .row1
+   {
+      grid-area: row2;
+      background-color: aqua;
+   }
+
+   .row2
+   {
+      grid-area: row1;
+      background-color: rgb(45, 75, 172);
+   }
+
+   .row3
+   {
+      grid-area: row3;
+      background-color: rgb(85, 145, 17);
+   }
+
+   .row4
+   {
+      grid-area: row4;
+      background-color: rgb(113, 103, 202);
+   }
+
+</style>
+<body>
+   <div class="main">
+      <div class="row1">Row 1</div>
+      <div class="row2">Row 2</div>
+      <div class="row3">Row 3</div>
+      <div class="row4">Row 4</div>
+   </div>
+</body>
+</html>
