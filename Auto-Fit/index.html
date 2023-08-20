@@ -4,7 +4,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>CSS Grid - MinMax</title>
+   <title>CSS Grid - Auto Fit</title>
 </head>
 
 <style>
@@ -21,33 +21,28 @@
 
       
    /* Grid */
-      display: grid;
-      
-      grid-template-columns: auto auto minmax(50px, 400px) auto;
-      column-gap: 30px;
-    
+      display: grid;                                 
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));  
    } 
    .row1
    {
-      grid-column: 1/2;
-      background-color: aqua;
+      background-color: red;
    }
 
    .row2
    {
-      grid-column: 2/3;
+     
       background-color: rgb(45, 75, 172);
    }
 
    .row3
    {
-      grid-column: 3/4;
+      
       background-color: rgb(85, 145, 17);
    }
 
    .row4
    {
-      grid-column: 4/5;
       background-color: rgb(113, 103, 202);
    }
 
@@ -58,11 +53,15 @@
       <div class="row2">Row 2</div>
       <div class="row3">Row 3</div>
       <div class="row4">Row 4</div>
+      <div class="row1">Row 5</div>
+      <div class="row2">Row 6</div>
+      <div class="row3">Row 7</div>
+      <div class="row4">Row 8</div>
    </div>
 
    <summary>
-      <!-- minmax(width, height) -->
-      <!-- minmax(value1, value2) sets the minimum and maximum height and width -->
+      <!-- auto-fit fit the available space -->
+      <!-- finifit ng element yung available space -->
    </summary>
 </body>
 </html>
