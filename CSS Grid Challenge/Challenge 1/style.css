@@ -1,0 +1,31 @@
+*
+{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+.container
+{
+   display: grid;
+   grid-template-rows: 1fr;
+      
+}
+
+.header
+{
+   padding: 5px;
+   border: 3px solid red;
+}
+
+.main
+{
+   padding: 5px;
+   border: 3px solid red;
+}
+
+.footer
+{
+   padding: 5px;
+   border: 3px solid red;
+}
